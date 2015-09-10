@@ -14,4 +14,4 @@ Questions and suggestions:
 
 Gary Feng: gary.feng@gmail.com
 
-- gary
+Github page: http://garyfeng.github.io/LogLogisticMixture/
