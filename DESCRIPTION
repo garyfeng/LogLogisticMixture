@@ -1,9 +1,10 @@
 Package: LogLogisticMixture
 Type: Package
-Title: What the package does (short line)
+Title: Log-logistic Mixture model
 Version: 1.0
 Date: 2013-11-10
 Author: Gary Feng <gary.feng@gmail.com>
 Maintainer: Gary Feng <gary.feng@gmail.com>
-Description: Fitting a 3-component log-logistic mixture model.
+Description: Maxmum Likelihood Estimation of the Log-logistic Mixture model 
 License: GPL v3
+Imports: muhaz
