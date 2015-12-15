@@ -1,6 +1,6 @@
 Package: LogLogisticMixture
 Type: Package
-Title: Log-logistic Mixture model
+Title: Log-logistic Mixture Distributions
 Version: 1.0
 Date: 2013-11-10
 Author: Gary Feng <gary.feng@gmail.com>

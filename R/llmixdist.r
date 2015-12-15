@@ -25,17 +25,18 @@ require(muhaz)
 
 #' Calculate the pdf, haz, and other info for a given rt data
 #' 
-#' @param fixdur A numeric vector of RT, in milliseconds; hopefully no NAs. 
+#' @param fixdur A numeric vector of RT, in milliseconds; NAs are removed. 
 #' @param binwidth The bin width for calculating the pdf and hazard rates; default to 25 msec
 #' @return a data frame containing the bins, pdf, haz, counts, etc. 
 #' 
 #' @export
 getDistr <-function(fixdur, binwidth=2) {
+  fixdur <- fixdur[! is.na(fixdur)] # remove NAs
   fixdur<-round(fixdur/binwidth)*binwidth
   status<-rep(1,length(fixdur))
   out1<-kphaz.fit(fixdur,status)
   
-  # get the density fun
+  # get the density fun, by creating the time intervals that cover the whole range
   fixhist <-hist(fixdur, c(0, out1$time, max(fixdur)), plot=F)
   
   # the lengths don't match.

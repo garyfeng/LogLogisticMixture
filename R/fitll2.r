@@ -5,8 +5,8 @@
 # Sept 2010
 ##############################
 # source("ll2sim_3.r")
-source("R/llmixdist.r")	# functions for generating/evaluating loglogistic and their mixtures
-source("R/parsepara.r")	# parameter parser
+#source("R/llmixdist.r")	# functions for generating/evaluating loglogistic and their mixtures
+#source("R/parsepara.r")	# parameter parser
 
 ###############################
 # fit 2.5 component loglogistic mixtures

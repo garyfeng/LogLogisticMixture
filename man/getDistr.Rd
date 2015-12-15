@@ -7,7 +7,7 @@
 getDistr(fixdur, binwidth = 2)
 }
 \arguments{
-\item{fixdur}{A numeric vector of RT, in milliseconds; hopefully no NAs.}
+\item{fixdur}{A numeric vector of RT, in milliseconds; NAs are removed.}
 
 \item{binwidth}{The bin width for calculating the pdf and hazard rates; default to 25 msec}
 }
